@@ -28,8 +28,7 @@ public class MyFIRSTJavaOpMode extends LinearOpMode
 
         imu.initialize(parameters);
 
-
-
+        //Waiting to push the PLAY button
         waitForStart();
 
         if (isStopRequested()) return;
