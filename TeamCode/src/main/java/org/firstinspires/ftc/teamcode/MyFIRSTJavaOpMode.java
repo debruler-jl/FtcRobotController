@@ -24,11 +24,13 @@ public class MyFIRSTJavaOpMode extends LinearOpMode
 
         IMU imu = hardwareMap.get(IMU.class, "imu");
 
-        IMU.Parameters parameters = new IMU.Parameters(new RevHubOrientationOnRobot(RevHubOrientationOnRobot.LogoFacingDirection.UP, RevHubOrientationOnRobot.UsbFacingDirection.FORWARD));
+        IMU.Parameters parameters = new IMU.Parameters(new RevHubOrientationOnRobot(RevHubOrientationOnRobot.LogoFacingDirection.UP,
+                RevHubOrientationOnRobot.UsbFacingDirection.FORWARD));
 
         imu.initialize(parameters);
 
         //Waiting to push the PLAY button
+        //Testing - change online
         waitForStart();
 
         if (isStopRequested()) return;
