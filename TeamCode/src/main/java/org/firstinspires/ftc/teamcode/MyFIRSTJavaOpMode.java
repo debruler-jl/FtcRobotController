@@ -156,6 +156,7 @@ public class MyFIRSTJavaOpMode extends LinearOpMode
 
             telemetry.addData("Robot current yaw", imu.getRobotYawPitchRollAngles().getYaw(AngleUnit.DEGREES));
             telemetry.addLine("This is the Coaches code!!!!");
+            telemetry.addLine("That means hands off!!!!");
             telemetry.update();
         }
     }
